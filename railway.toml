@@ -1,0 +1,15 @@
+[build]
+builder = "railpack"
+watchPatterns = [
+  "src/**",
+  "ui/**",
+  "scripts/**",
+  "extensions/**",
+  "assets/**",
+  "package.json",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "railpack.json",
+  "railway.toml",
+  "config/**"
+]

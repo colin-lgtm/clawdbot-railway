@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "node",
+  "steps": {
+    "build": {
+      "commands": [
+        "...",
+        "CLAWDBOT_PREFER_PNPM=1 pnpm ui:install",
+        "CLAWDBOT_PREFER_PNPM=1 pnpm ui:build"
+      ]
+    }
+  },
+  "deploy": {
+    "startCommand": "node dist/entry.js gateway --port $PORT",
+    "variables": {
+      "NODE_ENV": "production",
+      "CLAWDBOT_CONFIG_PATH": "/app/config/railway.clawdbot.json"
+    }
+  }
+}
