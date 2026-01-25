@@ -15,4 +15,4 @@ watchPatterns = [
 ]
 
 [deploy]
-startCommand = "node dist/entry.js gateway --port $PORT"
+startCommand = "node dist/entry.js gateway --port 8080"

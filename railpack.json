@@ -11,7 +11,7 @@
     }
   },
   "deploy": {
-    "startCommand": "node dist/entry.js gateway --port $PORT",
+    "startCommand": "node dist/entry.js gateway --port 8080",
     "variables": {
       "NODE_ENV": "production",
       "CLAWDBOT_CONFIG_PATH": "/app/config/railway.clawdbot.json"
