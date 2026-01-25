@@ -13,3 +13,6 @@ watchPatterns = [
   "railway.toml",
   "config/**"
 ]
+
+[deploy]
+startCommand = "node dist/entry.js gateway --port $PORT"
