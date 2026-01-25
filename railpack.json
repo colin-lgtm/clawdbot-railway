@@ -2,13 +2,12 @@
   "$schema": "https://schema.railpack.com",
   "provider": "node",
   "steps": {
-    "build": {
-      "commands": [
-        "...",
+    "build": [
+        "pnpm install --frozen-lockfile",
+        "pnpm build",
         "CLAWDBOT_PREFER_PNPM=1 pnpm ui:install",
         "CLAWDBOT_PREFER_PNPM=1 pnpm ui:build"
       ]
-    }
   },
   "deploy": {
     "startCommand": "node dist/entry.js gateway --port 8080",
