@@ -1,5 +1,7 @@
 [build]
 builder = "railpack"
+dockerfilePath = ""
+buildCommand = ""
 watchPatterns = [
   "src/**",
   "ui/**",
