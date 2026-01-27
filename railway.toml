@@ -17,4 +17,4 @@ watchPatterns = [
 ]
 
 [deploy]
-startCommand = node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured
+startCommand = "node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured"
