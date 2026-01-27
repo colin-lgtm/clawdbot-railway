@@ -17,4 +17,4 @@ watchPatterns = [
 ]
 
 [deploy]
-startCommand = "node dist/index.js doctor --fix && node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured --token 1234567890"
+startCommand = "node dist/index.js setup --non-interactive --gateway-mode=remote && node dist/index.js config set channels.discord.enabled true && node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured --token 1234567890"
