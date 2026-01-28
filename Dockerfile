@@ -25,6 +25,7 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
+RUN pnpm canvas:a2ui:bundle || true
 RUN pnpm build
 
 # Force pnpm for UI build (Bun may fail on ARM/Synology architectures)
