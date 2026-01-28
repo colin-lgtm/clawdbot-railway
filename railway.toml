@@ -17,4 +17,4 @@ watchPatterns = [
 ]
 
 [deploy]
-startCommand = "node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured --token abc123def456"
+startCommand = "mkdir -p /data/.clawdbot /data/workspace && chmod -R 777 /data && node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured --token abc123def456"
