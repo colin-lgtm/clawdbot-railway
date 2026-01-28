@@ -1,6 +1,6 @@
 [build]
 builder = "railpack"
-dockerfilePath = ""
+dockerfilePath = "Dockerfile"
 buildCommand = ""
 watchPatterns = [
   "src/**",
@@ -15,6 +15,5 @@ watchPatterns = [
   "railway.toml",
   "config/**"
 ]
-
 [deploy]
 startCommand = "node dist/index.js gateway --port 8080 --bind custom --allow-unconfigured --token abc123def456"
